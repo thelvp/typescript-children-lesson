@@ -1,14 +1,12 @@
-/**
- * Things you could try:
- *
- * JSX.Element;
- * JSX.Element | JSX.Element[];
- * React.ReactNode;
- * React.ReactChildren;
- * React.ReactChild[];
- */
+import { PropsWithChildren } from 'react';
 
-type BoxProps = { children: any /* 👈 Get rid of this! */ };
+/**
+ * To use for children typing: React.ReactNode; OR
+ * PropsWithChildren
+ **/
+
+// type BoxProps = { children: React.ReactNode };
+type BoxProps = PropsWithChildren<{}>;
 
 const Box = ({ children }: BoxProps) => {
   return (
